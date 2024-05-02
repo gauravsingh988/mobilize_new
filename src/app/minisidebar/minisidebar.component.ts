@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-minisidebar',
@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrl: './minisidebar.component.css'
 })
 export class MinisidebarComponent {
+ 
+  @Input() activeTab: any;
+  constructor(){
+    
+  }
+
+  ngOnInit(){
+  }
+
+  ngOnChanges(){
+    let data = this.activeTab;
+    console.log(data,this.activeTab)
+  }
 
 }
