@@ -9,15 +9,11 @@ export class MinisidebarComponent {
  
   @Input() activeTab: any;
   constructor(){
-    
+
   }
 
   ngOnInit(){
   }
 
-  ngOnChanges(){
-    let data = this.activeTab;
-    console.log(data,this.activeTab)
-  }
 
 }
